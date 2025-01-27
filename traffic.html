@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        @keyframes redcolor {
+            from {background-color: rgb(92, 86, 86);}
+            to {background-color: red;}
+        }
+
+        @keyframes yellowcolor {
+            from {background-color: rgb(92, 86, 86);}
+            to {background-color: yellow;}
+        }
+
+        @keyframes greencolor {
+            from {background-color: rgb(92, 86, 86);}
+            to {background-color: green;}
+        }
+
+        div.box {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            background-color: black;
+            height: 350px;
+            width: 150px;
+            padding-top: 20px; 
+            margin: auto;
+        }
+
+        .circle1 {
+            height: 100px;
+            width: 100px;
+            border-radius: 150px;
+            background-color: rgb(92, 86, 86);
+            animation-name: redcolor;
+            animation-duration: 5s;
+            margin:auto;
+            
+        }
+
+        .circle2 {
+            height: 100px;
+            width: 100px;
+            border-radius: 150px;
+            background-color: rgb(92, 86, 86);
+            margin:20px;
+            animation-name: yellowcolor;
+            animation-duration: 2s;
+            animation-delay: 5s;
+          
+
+        }
+
+        .circle3 {
+            height: 100px;
+            width: 100px;
+            border-radius: 150px;
+            background-color: rgb(92, 86, 86);
+            margin-bottom: 20px;
+            animation-name: greencolor;
+            animation-duration: 5s;
+            animation-delay: 7s;
+
+        }
+    </style>
+</head>
+<body>
+
+        <div class="box">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+        </div>
+</body>
+</html>
